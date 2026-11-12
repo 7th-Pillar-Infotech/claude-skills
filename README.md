@@ -7,6 +7,7 @@ Shared skills for the team to use with [Claude Code](https://claude.ai/code). Ea
 | Skill | Command | What it does |
 |-------|---------|-------------|
 | Case Study Generator | `/case-study` | Analyzes a project repo and generates a publish-ready case study for website and LinkedIn |
+| Premium Website Polish | `/premium-website-polish` | Design and release checklist for client websites (layout rhythm, mobile, motion, scroll, assets), built from real client correction rounds |
 
 ## Setup (One-Time)
 
@@ -24,6 +25,7 @@ git clone git@github.com:7th-Pillar-Infotech/claude-skills.git ~/7thPillar/claud
 cp -r ~/7thPillar/claude-skills/skills/* ~/.claude/skills/
 ```
 
+> With Option A, run `ln -s` again after a pull that adds new skills (existing links update automatically).
 > With Option A, run `cd ~/7thPillar/claude-skills && git pull` to get skill updates.
 > With Option B, re-copy after updates.
 
@@ -49,6 +51,8 @@ Claude will scan the project, ask a few questions, and generate `CASE-STUDY.md` 
 skills/
   case-study/
     SKILL.md          # Skill definition
+  premium-website-polish/
+    SKILL.md
   future-skill/
     SKILL.md
 ```
